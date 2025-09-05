@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keranjang - WebSkullStore</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo">WebSkullStore</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="product.html">Produk</a></li>
+        <li><a href="cart.html" class="active">Keranjang</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="login.html" id="logoutBtn">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cart-section">
+      <h1>Keranjang Belanja</h1>
+      <table id="cartTable">
+        <thead>
+          <tr>
+            <th>Produk</th>
+            <th>Jumlah</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Item keranjang akan diisi via JS -->
+        </tbody>
+      </table>
+      <div class="cart-total">
+        <p>Total: <span id="cartTotal">Rp 0</span></p>
+      </div>
+      <div class="cart-actions">
+        <a href="product.html" class="btn">← Lanjut Belanja</a>
+        <button id="checkoutBtn" class="btn">Checkout</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

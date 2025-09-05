@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History Pembelian - WebSkullStore</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">WebSkullStore</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cart.html">Keranjang</a>
+      <a href="history.html">History</a>
+      <a href="logout.html">Logout</a>
+    </nav>
+  </header>
+
+  <main class="history-container">
+    <h2>History Pembelian</h2>
+    <table class="history-table">
+      <thead>
+        <tr>
+          <th>Produk</th>
+          <th>Jumlah</th>
+          <th>Total</th>
+          <th>Status</th>
+          <th>Tanggal</th>
+        </tr>
+      </thead>
+      <tbody id="historyBody">
+        <!-- Data akan terisi secara realtime via script.js -->
+      </tbody>
+    </table>
+  </main>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+{
+  "version": 2,
+  "name": "webskullstore",
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "product.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "cart.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "checkout.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "login.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "register.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "forgot_password.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "verify_code.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "new_password.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "history.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "admin/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "assets/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "supabase/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}
